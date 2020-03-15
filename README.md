@@ -67,3 +67,12 @@ Things you may want to cover:
   |content|text|
   |status|integer|null: false|default: 0
   |title_image|string
+
+  ## DEMO
+  トップページです
+
+  ![](https://i.gyazo.com/66747c2ac417a7add0cb93313f38ac24.png)
+
+  記事作成画面です
+
+  ![](https://i.gyazo.com/fa06cc1dc8eecf3cfe2631b0f6b2af41.png)
