@@ -69,9 +69,9 @@ Things you may want to cover:
   |title_image|string
 
   ## DEMO
-  トップページです
+  記事閲覧画面のデモです
 
-  ![](https://i.gyazo.com/66747c2ac417a7add0cb93313f38ac24.png)
+  ![](https://i.gyazo.com/0d454c31a639ec63cb2e0224f28d64af.png)
 
   記事作成画面です
 
