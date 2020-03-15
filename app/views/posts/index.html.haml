@@ -1,0 +1,19 @@
+!!!
+.body
+  -# <ヘッダー>
+  .top-header
+    =render "shared/header"
+  -# <ここから、本文>
+  .main
+    .container
+      .row
+        -# <記事一覧>
+        .col-xs-12.col-sm-8
+          =render "shared/card"
+        = paginate(@posts)
+        -# <ここからサイドバー>
+        .col-xs-12.col-sm-4
+          =render "shared/side-bar"
+  -# <フッター>
+  .footer
+    =render "shared/footer"

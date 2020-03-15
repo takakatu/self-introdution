@@ -1,0 +1,36 @@
+!!!
+.body
+  -# <ヘッダー>
+  .top-header
+    =render "shared/header"
+  -# <メイン画面>
+  .main
+    .container-fluid
+      .row
+        -# <ダッシュボード>
+        .col-xs-12.col-sm-2
+          =render "users/dashboard"
+        -# <編集画面>
+        .col-xs-12.col-sm-10
+          編集ボックス
+          -# <編集ボックスの中身>
+          .container
+            = form_with(model: @post) do |form|
+              .row
+                -# <下書き保存、投稿ボタン、削除ボタン>
+                .col-xs-12.col-sm-12
+                  .col-xs-12.col.sm-12
+                    =form.label :title_image do
+                      =form.file_field :title_image
+                  .col-xs-12.col.sm-12
+                    =form.text_field :title, placeholder: "タイトル", id: "post-title"
+                  #preview-area
+                  .col-xs-12.col.sm-12
+                    =form.text_area :content, id: "post-textarea"
+              .row
+                .col-sm-4
+                  .btn#markdown.disabled markdown
+                .col-sm-4
+                  .btn#preview preview
+                .col-xs-12.col.sm-4
+                  =form.submit "下書を保存"

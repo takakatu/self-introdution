@@ -1,0 +1,14 @@
+.container-fluid
+  .row
+    .col-xs-12.col-sm-6#footer-left
+      About me
+      %hr
+      .introdution
+        おかつと申します。<br>営業から一念発起しプログラマーへ。プログラミング勉強中。このサイトも勉強しているruby on railsで作成いたしました。
+      =link_to new_user_session_path, id: "login" do
+        ログイン
+    .col-xs-12.col-sm-6#twitter-timeline
+      Twitter
+      %hr
+      %a.twitter-timeline{"data-height" => "300", "data-lang" => "ja", "data-theme" => "light", "data-width" => "90%", :href => "https://twitter.com/okatsu_engineer?ref_src=twsrc%5Etfw"} Tweets by okatsu_engineer
+      %script{:async => "", :charset => "utf-8", :src => "https://platform.twitter.com/widgets.js"}

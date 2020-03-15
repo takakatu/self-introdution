@@ -1,0 +1,19 @@
+!!!
+.body
+  -# <ヘッダー>
+  .top-header
+    =render "shared/header"
+  -# <メイン画面>
+  .main
+    .container-fluid
+      .row
+        -# <ダッシュボード>
+        .col-xs-12.col-sm-2
+          =render "users/dashboard"
+        -# <編集画面>
+        .col-xs-12.col-sm-10
+          編集ボックス
+          -# <編集ボックスの中身>
+          =render "edit-box"
+          .col-xs-12.col-sm-4
+            =link_to @post.status, post_toggle_status_path(@post), method: :patch

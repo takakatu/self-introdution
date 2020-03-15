@@ -1,0 +1,12 @@
+- @posts.each do |post|
+  .card
+    .card-img-top
+      = image_tag post.title_image.url, class: "thumbnail"
+    .card-body
+      .card-title
+        = post.title
+        %p
+          = post.created_at.strftime("%Y年%m月%d日")
+      .card-btn
+        =link_to 'もっと見る', "/posts/#{post.id}", method: :get
+  %p.notice

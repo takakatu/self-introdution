@@ -1,0 +1,10 @@
+.dashboard
+  DASH BOARD
+=link_to users_path do
+  記事一覧
+%br
+=link_to new_post_path do
+  新規作成
+%br
+=link_to destroy_user_session_path, method: :delete, id: "logout" do
+  ログアウト
